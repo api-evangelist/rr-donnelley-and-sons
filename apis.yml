@@ -1,7 +1,12 @@
 aid: rr-donnelley-and-sons
-url: https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.rr-donnelley-and-sons.com
+description: >-
+  R.R. Donnelley & Sons is a multinational integrated communications company that
+  provides marketing and business communications, commercial printing, and related
+  services.
