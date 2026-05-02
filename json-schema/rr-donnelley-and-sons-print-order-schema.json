@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/main/json-schema/rr-donnelley-and-sons-print-order-schema.json",
+  "title": "RR Donnelley Print Order",
+  "description": "Schema representing a print or marketing communications order for RR Donnelley & Sons services",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string",
+      "description": "Unique order identifier"
+    },
+    "orderType": {
+      "type": "string",
+      "description": "Type of print or communications order",
+      "enum": [
+        "commercial-print",
+        "direct-mail",
+        "web-to-print",
+        "labels",
+        "fulfillment",
+        "financial-communications",
+        "digital-communications"
+      ]
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Client account identifier"
+    },
+    "productName": {
+      "type": "string",
+      "description": "Name or description of the print product"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Number of pieces to produce",
+      "minimum": 1
+    },
+    "printMethod": {
+      "type": "string",
+      "description": "Printing technology used",
+      "enum": ["digital", "offset", "inkjet", "flexographic", "gravure"]
+    },
+    "paperStock": {
+      "type": "string",
+      "description": "Paper type and weight (e.g., '100# gloss coated text')"
+    },
+    "finishing": {
+      "type": "array",
+      "description": "Post-print finishing options",
+      "items": {
+        "type": "string",
+        "enum": ["fold", "trim", "bind", "laminate", "die-cut", "saddle-stitch", "perfect-bind"]
+      }
+    },
+    "variableData": {
+      "type": "boolean",
+      "description": "Whether the order uses variable data printing"
+    },
+    "mailClass": {
+      "type": "string",
+      "description": "USPS mail class for direct mail orders",
+      "enum": ["first-class", "marketing-mail", "periodicals", "package-services", "every-door-direct-mail"]
+    },
+    "targetRecipients": {
+      "type": "integer",
+      "description": "Number of mail recipients for direct mail campaigns"
+    },
+    "orderStatus": {
+      "type": "string",
+      "description": "Current order status",
+      "enum": ["submitted", "in-prepress", "in-production", "in-finishing", "in-distribution", "delivered", "cancelled"]
+    },
+    "requestedDeliveryDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Client-requested delivery date"
+    },
+    "estimatedDeliveryDate": {
+      "type": "string",
+      "format": "date",
+      "description": "RRD-estimated delivery date"
+    },
+    "fulfillmentLocation": {
+      "type": "string",
+      "description": "RRD facility processing the order"
+    }
+  },
+  "required": ["orderType", "clientId", "productName", "quantity", "orderStatus"]
+}

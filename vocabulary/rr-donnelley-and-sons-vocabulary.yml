@@ -1,0 +1,104 @@
+title: RR Donnelley And Sons Vocabulary
+description: >-
+  Domain vocabulary for RR Donnelley & Sons (RRD), a global integrated
+  communications company. Covers marketing communications, print services,
+  direct mail, logistics, web-to-print, and multichannel campaign management
+  terminology.
+version: '1.0'
+created: '2026-05-02'
+modified: '2026-05-02'
+
+categories:
+  - name: Print Services
+    description: Commercial printing and production terminology
+    terms:
+      - name: web-to-print
+        definition: Platform allowing users to customize and order print materials online
+      - name: digital-print
+        definition: Printing directly from digital files without physical plates or cylinders
+      - name: offset-print
+        definition: High-volume printing process using inked plates to transfer images to paper
+      - name: variable-data-printing
+        definition: Printing technique where text and images change between pieces based on data
+      - name: finishing
+        definition: Post-print production steps including cutting, folding, binding, and laminating
+      - name: prepress
+        definition: File preparation, proofing, and plate-making stages before printing
+      - name: print-on-demand
+        definition: Producing print materials only when ordered, eliminating warehousing
+
+  - name: Direct Mail
+    description: Direct mail campaign and fulfillment terminology
+    terms:
+      - name: direct-mail
+        definition: Printed marketing materials sent directly to targeted recipients by mail
+      - name: cass
+        definition: Coding Accuracy Support System — USPS certification for address standardization
+      - name: ncoa
+        definition: National Change of Address — USPS database for updating mailing addresses
+      - name: inkjet-addressing
+        definition: Applying variable recipient addresses to mail pieces using inkjet printing
+      - name: mail-class
+        definition: USPS service level (First Class, Marketing Mail, Periodicals, etc.)
+      - name: saturation-mail
+        definition: Mail delivered to every address within a geographic area
+      - name: every-door-direct-mail
+        definition: USPS program for sending to all addresses in a carrier route without a list
+
+  - name: Marketing Communications
+    description: Marketing content, channels, and campaign management
+    terms:
+      - name: connectone
+        definition: RRD's integrated marketing communications management platform
+      - name: storefront
+        definition: Online web-to-print portal for ordering branded marketing materials
+      - name: brand-asset-management
+        definition: Centralized storage and distribution of approved brand content
+      - name: multichannel
+        definition: Marketing strategy delivering consistent messaging across print, digital, and other channels
+      - name: personalization
+        definition: Customizing marketing content with recipient-specific data
+      - name: campaign
+        definition: Coordinated set of marketing activities targeting a defined audience
+      - name: fulfillment
+        definition: Processing, assembling, and shipping marketing materials or promotional items
+
+  - name: Logistics and Supply Chain
+    description: Distribution, warehousing, and supply chain terminology
+    terms:
+      - name: pick-and-pack
+        definition: Warehouse operation selecting items and packing them for shipment
+      - name: kitting
+        definition: Assembling multiple individual items into pre-packaged sets
+      - name: inventory-management
+        definition: Tracking and controlling stored materials and print-on-demand inventory
+      - name: co-mail
+        definition: Combining mailings from multiple mailers to qualify for postal discounts
+      - name: co-palletization
+        definition: Combining mail from multiple clients on shared pallets for postal entry
+
+  - name: Financial Communications
+    description: Regulatory and financial communications services
+    terms:
+      - name: sec-filing
+        definition: Submission of financial reports and disclosures to the Securities and Exchange Commission
+      - name: annual-report
+        definition: Annual shareholder communication summarizing financial performance
+      - name: proxy-statement
+        definition: SEC-required document providing shareholders voting information
+      - name: xbrl
+        definition: eXtensible Business Reporting Language — structured data format for financial filings
+      - name: edgar
+        definition: SEC's Electronic Data Gathering, Analysis, and Retrieval system for filings
+
+  - name: Labels and Packaging
+    description: Label printing and packaging terminology
+    terms:
+      - name: pressure-sensitive-label
+        definition: Self-adhesive label applied with pressure
+      - name: shrink-sleeve
+        definition: Full-body label that conforms to container shape when heat applied
+      - name: rfid-label
+        definition: Label embedded with a Radio Frequency Identification chip for tracking
+      - name: compliance-label
+        definition: Label meeting regulatory requirements (FDA, OSHA, GHS)

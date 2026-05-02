@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rrd": "https://www.rrd.com/vocab#",
+
+    "PrintOrder": {
+      "@id": "schema:Order",
+      "@type": "@id"
+    },
+    "MarketingCampaign": {
+      "@id": "schema:MarketingAction",
+      "@type": "@id"
+    },
+    "PrintProduct": {
+      "@id": "schema:Product",
+      "@type": "@id"
+    },
+    "DirectMailPiece": {
+      "@id": "rrd:DirectMailPiece",
+      "@type": "@id"
+    },
+    "FulfillmentOrder": {
+      "@id": "rrd:FulfillmentOrder",
+      "@type": "@id"
+    },
+
+    "productName": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "quantity": {
+      "@id": "schema:orderQuantity",
+      "@type": "xsd:integer"
+    },
+    "mailClass": {
+      "@id": "rrd:mailClass",
+      "@type": "xsd:string"
+    },
+    "recipientCount": {
+      "@id": "rrd:recipientCount",
+      "@type": "xsd:integer"
+    },
+    "campaignName": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "deliveryDate": {
+      "@id": "schema:deliveryDate",
+      "@type": "xsd:date"
+    },
+    "orderStatus": {
+      "@id": "schema:orderStatus",
+      "@type": "xsd:string"
+    },
+    "printMethod": {
+      "@id": "rrd:printMethod",
+      "@type": "xsd:string"
+    },
+    "paperStock": {
+      "@id": "rrd:paperStock",
+      "@type": "xsd:string"
+    },
+    "finishing": {
+      "@id": "rrd:finishing",
+      "@type": "xsd:string"
+    },
+    "variableData": {
+      "@id": "rrd:variableData",
+      "@type": "xsd:boolean"
+    },
+    "targeting": {
+      "@id": "schema:targetAudience",
+      "@type": "xsd:string"
+    },
+    "fulfillmentWarehouse": {
+      "@id": "rrd:fulfillmentWarehouse",
+      "@type": "xsd:string"
+    }
+  }
+}
