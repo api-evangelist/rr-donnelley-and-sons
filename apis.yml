@@ -25,6 +25,12 @@ modified: '2026-05-02'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: TrustCenter
+    url: security/rr-donnelley-and-sons-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/rr-donnelley-and-sons-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/rr-donnelley-and-sons-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/rr-donnelley
   - type: Website
@@ -37,6 +43,8 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/vocabulary/rr-donnelley-and-sons-vocabulary.yml
   - type: JSONLDContext
     url: https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/json-ld/rr-donnelley-and-sons-context.jsonld
+  - type: Blog
+    url: https://www.rrd.com/about/newsroom
 
 maintainers:
   - FN: Kin Lane
