@@ -20,8 +20,12 @@ description: >-
   provides end-to-end marketing communications management including web-to-print
   storefronts, workflow automation, content management, and multichannel
   campaign execution. RRD serves enterprises across financial services,
-  healthcare, retail, and other industries. No public developer API is
-  currently documented.
+  healthcare, retail, and other industries. RRD operates customer-facing APIs —
+  its own help page states they authenticate with a Username and APIKey request
+  header — but they are reachable only by contracted customers: the API help
+  host refuses public connections, api.rrd.com has its ports filtered, and the
+  ConnectOne storefront returns 401 on every path. No machine-readable contract
+  is published anonymously.
 type: Index
 url: >-
   https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/apis.yml
@@ -33,7 +37,7 @@ tags:
   - Logistics
   - Fortune 1000
 created: '2025-01-01'
-modified: '2026-05-02'
+modified: '2026-08-13'
 specificationVersion: '0.19'
 apis: []
 common:
@@ -50,13 +54,64 @@ common:
   - type: Documentation
     url: https://www.rrd.com/solutions/connectone
   - type: InvestorRelations
-    url: https://investors.rrd.com
+    url: https://investor.rrd.com/home/default.aspx
   - type: Vocabulary
     url: https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/vocabulary/rr-donnelley-and-sons-vocabulary.yml
   - type: JSONLDContext
     url: https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/json-ld/rr-donnelley-and-sons-context.jsonld
   - type: Blog
     url: https://www.rrd.com/about/newsroom
+  - type: Security
+    url: security/rr-donnelley-and-sons-vulnerability-disclosure.yml
+  - type: Compliance
+    url: security/rr-donnelley-and-sons-trust-center.yml
+  - type: Conformance
+    url: conformance/rr-donnelley-and-sons-conformance.yml
+  - type: WellKnown
+    url: well-known/rr-donnelley-and-sons-well-known.yml
+  - type: SecurityTxt
+    url: well-known/rr-donnelley-and-sons-security.txt
+  - type: LLMsTxt
+    url: llms/rr-donnelley-and-sons-llms.txt
+  - type: Plans
+    url: plans/rr-donnelley-and-sons-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/rr-donnelley-and-sons-rate-limits.yml
+  - type: TermsOfService
+    url: https://www.rrd.com/terms-of-use
+  - type: PrivacyPolicy
+    url: https://www.rrd.com/privacy-policy
+  - type: Support
+    url: https://www.rrd.com/contact-us
+  - type: Login
+    url: https://connectone.rrd.com/
+
+x-enrichment:
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    RRD's own API help page (intl.rrd.com/Help, indexed publicly as "RR Donnelley
+    API" and stating that customer-facing APIs require a Username and APIKey
+    header) refuses TCP 443 from two independent networks, api.rrd.com resolves
+    to 162.27.32.131 with ports 443 and 80 filtered, and the ConnectOne customer
+    storefront answers 401 on every path — the API exists but only contracted
+    customers can read a byte of it.
+  evidence:
+    - url: https://intl.rrd.com/Help
+      status: 0
+    - url: https://connectone.rrd.com/openapi.json
+      status: 401
+    - url: https://www.rrd.com/openapi.json
+      status: 404
+    - url: https://www.rrd.com/.well-known/security.txt
+      status: 200
+  checked: '2026-08-13'
 
 maintainers:
   - FN: Kin Lane
