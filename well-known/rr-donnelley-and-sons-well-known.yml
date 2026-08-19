@@ -1,0 +1,67 @@
+generated: '2026-08-13'
+method: probed
+source: live HTTPS probes of every RRD host named in apis.yml
+note: >-
+  RRD serves exactly one well-known document: an RFC 9116 security.txt on
+  www.rrd.com. Every other well-known path on that host returns the site's
+  standard HTML 404 page. connectone.rrd.com — the ConnectOne customer
+  storefront — answers 401 on every path including /.well-known/*, so nothing
+  there is anonymously readable. api.rrd.com resolves (162.27.32.131) but both
+  443 and 80 are closed/filtered from the public internet.
+hosts:
+  - host: www.rrd.com
+    paths:
+      - path: /.well-known/security.txt
+        status: 200
+        content_type: text/plain
+        file: well-known/rr-donnelley-and-sons-security.txt
+        document: true
+      - path: /.well-known/openid-configuration
+        status: 404
+        document: false
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        document: false
+      - path: /.well-known/api-catalog
+        status: 404
+        document: false
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        document: false
+      - path: /.well-known/agent-card.json
+        status: 404
+        document: false
+      - path: /.well-known/agent.json
+        status: 404
+        document: false
+  - host: connectone.rrd.com
+    note: authenticated storefront; every path returns 401 before routing
+    paths:
+      - path: /.well-known/security.txt
+        status: 401
+        document: false
+      - path: /.well-known/openid-configuration
+        status: 401
+        document: false
+      - path: /.well-known/agent-card.json
+        status: 401
+        document: false
+  - host: api.rrd.com
+    note: DNS resolves to 162.27.32.131; TCP 443 and 80 closed/filtered — not publicly reachable
+    paths:
+      - path: /
+        status: null
+        document: false
+        detail: connection refused / filtered
+  - host: intl.rrd.com
+    note: >-
+      DNS resolves to 40.70.68.247 (Azure); TCP 443 refuses connections from two
+      independent networks. Search engines index an RRD-authored page at
+      https://intl.rrd.com/Help titled "RR Donnelley API", so the host does serve
+      RRD API help to somebody — just not to the anonymous public internet.
+    paths:
+      - path: /Help
+        status: null
+        document: false
+        detail: connection refused
+documents_found: 1

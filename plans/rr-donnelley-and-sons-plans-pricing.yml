@@ -1,0 +1,25 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.rrd.com/contact-us
+plan_count: 0
+plans: []
+note: >-
+  RRD publishes no plans, tiers, or list pricing of any kind. It is an
+  enterprise print, direct-mail, labels, logistics and business-communications
+  provider that sells through named account teams and RFPs; commercial terms are
+  negotiated per contract. Probes for a public pricing surface all miss:
+  https://www.rrd.com/pricing 404, /plans 404, /quote 404, /request-a-quote 404.
+  The only commercial entry point is the contact/RFP form at
+  https://www.rrd.com/contact-us (200). The ConnectOne storefront
+  (https://connectone.rrd.com/) is where a contracted customer sees their own
+  negotiated catalog pricing, and it answers 401 to everyone else. This is a
+  recorded absence, not an unchecked field.
+evidence:
+  - url: https://www.rrd.com/pricing
+    status: 404
+  - url: https://www.rrd.com/plans
+    status: 404
+  - url: https://www.rrd.com/contact-us
+    status: 200
+  - url: https://connectone.rrd.com/
+    status: 401

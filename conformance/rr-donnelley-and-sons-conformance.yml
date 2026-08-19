@@ -1,0 +1,66 @@
+generated: '2026-08-13'
+method: searched
+source: https://trust.rrd.com/
+docs: https://trust.rrd.com/
+note: >-
+  RRD publishes no machine-readable API contract, so there is nothing to assert
+  API-protocol conformance against (no OAuth 2.0 / OIDC metadata, no RFC 9457
+  problem+json, no documented pagination or idempotency semantics are readable
+  anonymously). What RRD does publish is an enterprise trust center naming
+  audited certifications; those are recorded here and carry the Compliance
+  pointer.
+standards:
+  - id: iso-27001
+    name: ISO/IEC 27001
+    conforms: true
+    evidence: Named as a held certification on the RRD Trust Center (trust.rrd.com).
+  - id: soc2-type2
+    name: SOC 2 Type 2
+    conforms: true
+    evidence: RRD Trust Center lists SOC 2 Type 2, and a combined SOC 2 + HITRUST report.
+  - id: soc1-type2
+    name: SOC 1 Type 2
+    conforms: true
+    evidence: Named as a held report on the RRD Trust Center.
+  - id: hitrust
+    name: HITRUST (via SOC 2 + HITRUST report)
+    conforms: true
+    evidence: RRD Trust Center lists a combined SOC 2 + HITRUST report.
+  - id: pci-dss
+    name: PCI DSS
+    conforms: true
+    evidence: Named as a held certification on the RRD Trust Center.
+  - id: iso-22301
+    name: ISO 22301:2019 (business continuity)
+    conforms: true
+    evidence: Named as a held certification on the RRD Trust Center.
+  - id: cyber-essentials-plus
+    name: Cyber Essentials Plus
+    conforms: true
+    evidence: Named as a held certification on the RRD Trust Center.
+  - id: nist-csf
+    name: NIST CSF 2.0
+    conforms: true
+    evidence: RRD Trust Center states its security program is aligned to NIST CSF 2.0.
+  - id: oauth2
+    name: OAuth 2.0
+    conforms: false
+    evidence: >-
+      No /.well-known/oauth-authorization-server (404 on www.rrd.com) and no
+      anonymously readable auth documentation. RRD's own API help page states
+      customer-facing APIs authenticate with a Username + APIKey header, which is
+      key auth, not OAuth.
+  - id: oidc
+    name: OpenID Connect
+    conforms: false
+    evidence: /.well-known/openid-configuration returns 404 on www.rrd.com.
+  - id: rfc9457
+    name: RFC 9457 Problem Details
+    conforms: false
+    evidence: No published OpenAPI or error reference to evaluate.
+  - id: rfc9116
+    name: RFC 9116 security.txt
+    conforms: true
+    evidence: >-
+      https://www.rrd.com/.well-known/security.txt returns 200 text/plain with
+      Contact, Expires, Preferred-Languages and Canonical fields.

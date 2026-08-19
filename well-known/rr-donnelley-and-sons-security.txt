@@ -1,0 +1,5 @@
+#RRD's security contact address
+Contact: mailto:security@rrd.com
+Expires: 2026-12-31T18:59:00.000Z
+Preferred-Languages: en
+Canonical: https://rrd.com/.well-known/security.txt

@@ -1,0 +1,26 @@
+generated: '2026-08-13'
+method: searched
+source: https://intl.rrd.com/Help
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No rate limits are published. RRD's only named API surface — the "RR Donnelley
+  API" help page at https://intl.rrd.com/Help, which states that customer-facing
+  APIs require a Username and APIKey in the request header — is not reachable
+  anonymously: intl.rrd.com resolves (40.70.68.247) but refuses TCP 443 from two
+  independent networks. api.rrd.com resolves (162.27.32.131) with 443 and 80
+  closed/filtered. connectone.rrd.com answers 401 on every path. There is
+  therefore no anonymously readable document stating a quota, window, burst,
+  429 behaviour, or any RateLimit-*/Retry-After response header, and no live
+  unauthenticated response to observe them on. An honest zero, not an unchecked
+  field.
+evidence:
+  - url: https://intl.rrd.com/Help
+    status: 0
+    detail: connection refused on TCP 443
+  - url: https://api.rrd.com/
+    status: 0
+    detail: TCP 443 and 80 closed/filtered
+  - url: https://connectone.rrd.com/
+    status: 401
