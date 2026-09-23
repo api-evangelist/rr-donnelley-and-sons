@@ -1,7 +1,9 @@
 ---
 title: SEC Charges R.R. Donnelley & Sons Co. with ...
 url: https://www.sec.gov/newsroom/press-releases/2024-75
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"R.R. Donnelley & Sons" press release artificial intelligence'
 position: 5
 source: serpapi-google

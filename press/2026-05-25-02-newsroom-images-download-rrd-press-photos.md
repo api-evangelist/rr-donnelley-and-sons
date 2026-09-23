@@ -1,7 +1,9 @@
 ---
 title: Newsroom Images | Download RRD Press Photos
 url: https://www.rrd.com/about/newsroom/images
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"R.R. Donnelley & Sons" press release artificial intelligence'
 position: 2
 source: serpapi-google

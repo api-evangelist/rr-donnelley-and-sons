@@ -1,7 +1,9 @@
 ---
 title: 'RRD Survey: Marketers Embrace Technology to ...'
 url: https://www.businesswire.com/news/home/20240411726617/en/RRD-Survey-Marketers-Embrace-Technology-to-Strategically-Integrate-Print-and-Digital
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"R.R. Donnelley & Sons" press release artificial intelligence'
 position: 3
 source: serpapi-google

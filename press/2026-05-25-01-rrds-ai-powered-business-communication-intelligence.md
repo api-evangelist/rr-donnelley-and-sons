@@ -1,7 +1,9 @@
 ---
 title: RRD's AI-Powered Business Communication Intelligence ...
 url: https://www.rrd.com/about/newsroom/press-release/rrds-ai-powered-business-communication-intelligence-platform-streamlines-and-improves-customer-communications
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"R.R. Donnelley & Sons" press release artificial intelligence'
 position: 1
 source: serpapi-google
