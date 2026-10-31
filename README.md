@@ -64,57 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-RR Donnelley & Sons Company (RRD) is a global provider of integrated communications services, offering marketing, business communications, commercial printing, direct mail, print fulfillment, labels, logistics, and digital communications. RRD's ConnectOne platform provides end-to-end marketing communications management including web-to-print storefronts, workflow automation, content management, and multichannel campaign execution. No public developer API is currently documented.
+RR Donnelley & Sons Company (RRD) is a global provider of integrated communications services, offering marketing, business communications, commercial printing, direct mail, print fulfillment, labels, logistics, print management, and digital communications. RRD's ConnectOne platform provides end-to-end marketing communications management including web-to-print storefronts, workflow automation, content management, and multichannel campaign execution. RRD serves enterprises across financial services, healthcare, retail, and other industries. RRD operates customer-facing APIs — its own help page states they authenticate with a Username and APIKey request header — but they are reachable only by contracted customers: the API help host refuses public connections, api.rrd.com has its ports filtered, and the ConnectOne storefront returns 401 on every path. No machine-readable contract is published anonymously.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/rr-donnelley-and-sons/refs/heads/main/apis.yml)
+**Areas:** Communications · Marketing · Print Services · Direct Mail · Logistics · Fortune 1000
 
-## Scope
+## RR Donnelley And Sons on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for RR Donnelley And Sons is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rr-donnelley-and-sons/](https://apis.io/providers/rr-donnelley-and-sons/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Communications, Marketing, Print Services, Direct Mail, Logistics, Fortune 1000
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### JSON Schema (1)
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-05-02
+The data models the API reads and writes.
 
-## APIs
+- [RR Donnelley Print Order](https://apis.io/schemas/rr-donnelley-and-sons/rr-donnelley-and-sons-print-order/)
 
-No public developer APIs are currently documented for RR Donnelley & Sons.
+#### JSON-LD (1)
 
-## Artifacts
+Linked-data contexts for the provider's vocabulary.
 
-### JSON Schema
+- [Rr Donnelley And Sons Context](https://apis.io/jsonld/rr-donnelley-and-sons/rr-donnelley-and-sons-context/)
 
-| File | Description |
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [RR Donnelley And Sons Vocabulary](https://apis.io/vocabularies/rr-donnelley-and-sons/rr-donnelley-and-sons-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [RR Donnelley And Sons — jsonschema rules](https://apis.io/rules/rr-donnelley-and-sons/rr-donnelley-and-sons-jsonschema-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rr Donnelley And Sons Domain Security](https://apis.io/security/rr-donnelley-and-sons/rr-donnelley-and-sons-domain-security/)
+- [Rr Donnelley And Sons Trust Center](https://apis.io/security/rr-donnelley-and-sons/rr-donnelley-and-sons-trust-center/)
+- [Rr Donnelley And Sons Vulnerability Disclosure](https://apis.io/security/rr-donnelley-and-sons/rr-donnelley-and-sons-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Rr Donnelley And Sons Plans Pricing](https://apis.io/plans/rr-donnelley-and-sons/rr-donnelley-and-sons-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rr Donnelley And Sons Rate Limits](https://apis.io/rate-limits/rr-donnelley-and-sons/rr-donnelley-and-sons-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.rrd.com)
+- [Documentation](https://www.rrd.com/solutions/connectone)
+- [Support](https://www.rrd.com/contact-us)
+- [Blog](https://www.rrd.com/about/newsroom)
+- [Terms of service](https://www.rrd.com/terms-of-use)
+- [Privacy policy](https://www.rrd.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 28.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| [rr-donnelley-and-sons-print-order-schema.json](json-schema/rr-donnelley-and-sons-print-order-schema.json) | Print and marketing communications order schema |
+| Discoverability | 55.4 |
+| Contract quality | 10.7 |
+| Contract governance | 41.7 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 43.4 |
 
-### JSON-LD
+**Agent readiness 2.5** — human-only
 
-| File | Description |
+| Agent-readiness dimension | Result |
 |---|---|
-| [rr-donnelley-and-sons-context.jsonld](json-ld/rr-donnelley-and-sons-context.jsonld) | JSON-LD context mapping RRD communications vocabulary to schema.org |
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-### Vocabulary
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
 
-| File | Description |
-|---|---|
-| [rr-donnelley-and-sons-vocabulary.yml](vocabulary/rr-donnelley-and-sons-vocabulary.yml) | RRD domain terminology — print services, direct mail, marketing communications, logistics |
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rr-donnelley-and-sons/](https://apis.io/providers/rr-donnelley-and-sons/).
 
-## Resources
+## How this profile is made
 
-- **Website:** https://www.rrd.com
-- **ConnectOne Platform:** https://www.rrd.com/solutions/connectone
-- **Investor Relations:** https://investors.rrd.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Maintainers
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RR Donnelley And Sons: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**FN:** Kin Lane
+## Open an issue
 
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rr-donnelley-and-sons/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
